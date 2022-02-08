@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SyrianCards</string>
+    <string name="notification">notification</string>
+    <string name="notif_desc">description</string>
+    <string name="last_transactions">Last Transactions</string>
+    <string name="see_all">See all</string>
+    <string name="last_notifications">Last Notifications</string>
+    <string name="balance">Balance</string>
+    <string name="dollar">$</string>
 </resources>
