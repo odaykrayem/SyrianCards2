@@ -16,7 +16,7 @@
         <RelativeLayout
             android:id="@+id/up_layout"
             android:layout_width="match_parent"
-            android:layout_height="300dp">
+            android:layout_height="wrap_content">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/user_img"
@@ -124,13 +124,15 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+
                     >
 
                     <androidx.cardview.widget.CardView
                         android:layout_gravity="center"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         app:cardCornerRadius="7dp"
                         app:cardPreventCornerOverlap="false" />
                 </FrameLayout>
@@ -139,12 +141,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
                     >
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         app:cardCornerRadius="7dp"
                         app:cardPreventCornerOverlap="false" />
@@ -153,12 +156,14 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+
                     >
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         app:cardCornerRadius="7dp"
                         app:cardPreventCornerOverlap="false" />
@@ -167,13 +172,15 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_margin="15dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/transparent"
+
                     >
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/card_send"
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
                         app:cardCornerRadius="7dp"
                         app:cardPreventCornerOverlap="false" />
@@ -234,7 +241,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
             android:layout_below="@id/up_layout"
             android:background="@drawable/home_below_bg">
 
@@ -273,6 +281,7 @@
                 android:id="@+id/nested_sV"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:minHeight="400dp"
                 android:layout_below="@id/below_title_layout"
                 android:background="@drawable/home_below_bg">
 
@@ -280,7 +289,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:overScrollMode="never"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
