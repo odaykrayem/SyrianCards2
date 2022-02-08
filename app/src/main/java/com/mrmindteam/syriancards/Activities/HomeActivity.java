@@ -14,6 +14,7 @@ public class HomeActivity extends AppCompatActivity {
 
     CardView card1;
     FrameLayout frameLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
