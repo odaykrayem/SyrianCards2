@@ -9,20 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.HomeActivity">
+        <activity android:name=".Activities.SellCard"></activity>
+        <activity android:name=".Activities.BalanceRequests">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.BalanceRequestDetails"></activity>
+        <activity android:name=".Activities.RequestBalance" />
+        <activity android:name=".Activities.HomeActivity" />
         <activity android:name=".Activities.SignUpActivity" />
-        <activity android:name=".Activities.LoginActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue"
+    tools:context=".Activities.SellCard"
+    android:layoutDirection="ltr"
+   >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true">
+
+       <LinearLayout
+           android:id="@+id/cards_spinner_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           android:weightSum="5"
+           >
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="2dp"
+               android:layout_marginEnd="2dp"
+               android:layout_weight="2"
+               android:gravity="start"
+               android:text="@string/choose_card_type"
+               android:textSize="16sp"
+               android:textStyle="bold"/>
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="2dp"
+               android:layout_marginEnd="2dp"
+               android:layout_weight="3"
+               android:background="@drawable/button_bg">
+
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/cards_spinner"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"/>
+           </LinearLayout>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/card_value_spinner_layout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/cards_spinner_layout"
+           android:layout_marginStart="16dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="16dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           android:weightSum="5"
+           >
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="2dp"
+               android:layout_marginEnd="2dp"
+               android:layout_weight="2"
+               android:gravity="start"
+               android:textSize="16sp"
+               android:textStyle="bold" />
+
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="2dp"
+               android:layout_marginEnd="2dp"
+               android:layout_weight="3"
+               android:background="@drawable/button_bg">
+
+               <androidx.appcompat.widget.AppCompatSpinner
+                   android:id="@+id/card_value_spinner"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent" />
+           </LinearLayout>
+
+
+       </LinearLayout>
+       <RelativeLayout
+           android:id="@+id/quantity_layout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/card_value_spinner_layout"
+           android:layout_marginTop="30dp"
+           >
+
+           <TextView
+               android:id="@+id/quantity"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:text="10"
+               android:textStyle="bold"
+               android:textSize="35sp"
+               android:layout_marginStart="15dp"
+               android:layout_marginEnd="15dp"
+               />
+
+           <ImageButton
+               android:id="@+id/quantity_increment"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_toStartOf="@id/quantity"/>
+
+           <ImageButton
+               android:id="@+id/quantity_decrement"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:scaleType="center"
+               android:layout_toEndOf="@id/quantity"
+               android:paddingVertical="10dp"
+               />
+
+
+       </RelativeLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_below="@id/quantity_layout"
+           android:layout_marginTop="20dp"
+           android:gravity="center_vertical"
+           android:layout_marginEnd="10dp"
+           android:layout_marginStart="10dp"
+           >
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@color/white_600"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="horizontal"
+               >
+
+               <TextView
+                   android:id="@+id/result"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="expected_result"
+                   android:textSize="40sp"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_gravity="center"
+                   android:layout_marginEnd="4dp"
+                   android:layout_marginStart="4dp"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="kjnjklsp"
+                   android:textSize="40sp"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_marginEnd="4dp"
+                   android:layout_marginStart="4dp"
+                   />
+           </LinearLayout>
+       </LinearLayout>
+
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.RequestBalance">
+
+    <RelativeLayout
+        android:id="@+id/transfer_option_layout"
+        android:paddingTop="16dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:text="Balance Request"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/haram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:background="@drawable/transfer_option_btn_state_bg"
+                android:text="alharam"/>
+
+            <RadioButton
+                android:id="@+id/fouad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="18dp"
+                android:textSize="18sp"
+                android:background="@drawable/transfer_option_btn_state_bg"
+                android:text="al fouaad"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:layout_below="@id/transfer_option_layout">
+
+        <TextView
+            android:id="@+id/amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Amount"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            android:alpha="0.7"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_below="@id/amount_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="4900 S.P"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <SeekBar
+            android:id="@+id/amount_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/amount"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:thumbTint="@color/secondary"
+            android:progressTint="@color/secondary" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:text="Request balance"
+        android:textColor="@color/white"
+        android:background="@drawable/colored_button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"/>
+
+
+
+</RelativeLayout>
