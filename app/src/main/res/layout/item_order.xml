@@ -41,6 +41,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textColor="@color/black"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="1000.00 S.P"
                 android:textStyle="bold"/>
@@ -50,18 +51,11 @@
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
                 android:textColor="@color/black"
+                android:layout_weight="1"
                 android:gravity="center_vertical"
                 android:text="1000.00 S.P"
                 android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/quantity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:textColor="@color/black"
-                android:gravity="center_vertical"
-                android:text="1000.00 S.P"
-                android:textStyle="bold"/>
+
             <TextView
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
@@ -69,9 +63,23 @@
                 android:textSize="16sp"
                 android:alpha="0.6"
                 android:gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="10/09/2021"/>
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:alpha="0.6"
+            android:layout_alignTop="@id/image"
+            android:layout_alignBottom="@id/image"
+            android:layout_toStartOf="@id/status"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:text="@string/quantity"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"/>
         <TextView
             android:id="@+id/status"
             android:layout_width="wrap_content"
