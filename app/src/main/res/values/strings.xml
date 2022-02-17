@@ -19,4 +19,9 @@
     <string name="my_transactions">My Transactions</string>
     <string name="category">Category</string>
     <string name="choose_card_type">Choose card type</string>
+    <string name="choose_card_type">Choose card type</string>
+    <string name="choose_card_value">Choose card value</string>
+    <string name="expected_result">12900</string>
+    <string name="sp">S.p</string>
+    <string name="btn_sell">Sell For</string>
 </resources>
