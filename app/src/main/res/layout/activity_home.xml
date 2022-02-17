@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
     android:layoutDirection="ltr"
-    tools:context="com.mrmindteam.syriancards.Activities.HomeActivity">
+    tools:context="com.mrmindteam.syriancards.activities.HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

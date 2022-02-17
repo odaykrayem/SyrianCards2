@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mrmindteam.syriancards.Activities.SignUpActivity"
+    tools:context="com.mrmindteam.syriancards.activities.SignUpActivity"
     android:background="@mipmap/signup"
     android:layoutDirection="ltr">
 

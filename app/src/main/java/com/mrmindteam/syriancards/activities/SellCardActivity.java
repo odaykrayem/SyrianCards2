@@ -1,4 +1,4 @@
-package com.mrmindteam.syriancards.Activities;
+package com.mrmindteam.syriancards.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 

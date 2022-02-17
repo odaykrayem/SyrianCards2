@@ -1,4 +1,4 @@
-package com.mrmindteam.syriancards.Activities;
+package com.mrmindteam.syriancards.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.mrmindteam.syriancards.R;
 
-public class BalanceRequestDetails extends AppCompatActivity {
+public class NotificationsListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_balance_request_details);
+        setContentView(R.layout.activity_notifications_list);
     }
 }

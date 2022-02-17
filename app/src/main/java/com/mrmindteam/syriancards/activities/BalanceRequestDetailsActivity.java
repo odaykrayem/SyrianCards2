@@ -1,4 +1,4 @@
-package com.mrmindteam.syriancards.Activities;
+package com.mrmindteam.syriancards.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.mrmindteam.syriancards.R;
 
-public class SellCard extends AppCompatActivity {
+public class BalanceRequestDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_card);
+        setContentView(R.layout.activity_balance_request_details);
     }
 }

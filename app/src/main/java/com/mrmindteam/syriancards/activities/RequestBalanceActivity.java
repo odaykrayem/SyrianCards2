@@ -1,4 +1,4 @@
-package com.mrmindteam.syriancards.Activities;
+package com.mrmindteam.syriancards.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.mrmindteam.syriancards.Constants;
 import com.mrmindteam.syriancards.R;
 
-public class RequestBalance extends AppCompatActivity {
+public class RequestBalanceActivity extends AppCompatActivity {
 
     RadioGroup mTransferOptions;
     TextView mAmountTv;

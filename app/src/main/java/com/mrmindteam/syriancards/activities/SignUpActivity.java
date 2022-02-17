@@ -1,4 +1,4 @@
-package com.mrmindteam.syriancards.Activities;
+package com.mrmindteam.syriancards.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,23 +9,22 @@ import android.widget.Button;
 
 import com.mrmindteam.syriancards.R;
 
-public class LoginActivity extends AppCompatActivity {
-
-    Button btnLogin, btnSignUp;
+public class SignUpActivity extends AppCompatActivity {
+    private Button btnLogin,btnSignup;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-
+        setContentView(R.layout.activity_register);
         btnLogin=(Button)findViewById(R.id.btnLogin);
-        btnSignUp=(Button)findViewById(R.id.btnSignup);
+        btnSignup=(Button)findViewById(R.id.btnSignup);
 
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(SignUpActivity.this,LoginActivity.class);
                 startActivity(intent);
             }
         });
+
     }
 }
