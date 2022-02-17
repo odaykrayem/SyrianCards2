@@ -127,7 +127,7 @@
                 android:weightSum="4">
 
                 <FrameLayout
-                    android:id="@+id/frame"
+                    android:id="@+id/sell_card"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -152,6 +152,7 @@
                 </FrameLayout>
 
                 <FrameLayout
+                    android:id="@+id/withdraw"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -173,6 +174,7 @@
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout
+                    android:id="@+id/my_orders"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -192,6 +194,7 @@
                     </FrameLayout>
                 </FrameLayout>
                 <FrameLayout
+                    android:id="@+id/my_requests"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
