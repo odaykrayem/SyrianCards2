@@ -25,4 +25,14 @@
     <string name="btn_sell">Sell For</string>
     <string name="my_orders">My Orders</string>
     <string name="quantity">4</string>
+    <string name="card_name">Card name</string>
+    <string name="card_type">Card type</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone">Phone</string>
+    <string name="name">Name</string>
+    <string name="missing_fields_message">You have to fill all fields</string>
+    <string name="confirm_pass_error">Please make sure that both passwords are the same</string>
+    <string name="phone_length_error">Please insert a valid phone number</string>
 </resources>

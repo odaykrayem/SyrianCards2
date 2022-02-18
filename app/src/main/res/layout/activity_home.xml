@@ -53,6 +53,7 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/home_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Oday Fattouh"
@@ -62,6 +63,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/home_notification_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -104,6 +106,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/balance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="12,500"

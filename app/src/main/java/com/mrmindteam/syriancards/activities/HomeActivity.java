@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.mrmindteam.syriancards.R;
@@ -18,7 +19,8 @@ public class HomeActivity extends AppCompatActivity {
     FrameLayout frameLayout;
     FrameLayout sellCard, requestBalance, myOrders, myRequests;
     RecyclerView notificationsRV;
-    TextView seeAll;
+    TextView name,balance, seeAll;
+    ImageView notificationIcon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,9 @@ public class HomeActivity extends AppCompatActivity {
         myRequests = findViewById(R.id.my_requests);
         notificationsRV = findViewById(R.id.rv);
         seeAll = findViewById(R.id.see_all);
+        name = findViewById(R.id.home_name);
+        balance = findViewById(R.id.balance);
+        notificationIcon = findViewById(R.id.home_notification_icon);
 
         sellCard.setOnClickListener(v -> startActivity(
                 new Intent(HomeActivity.this, SellCardActivity.class)));
@@ -45,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
 
         seeAll.setOnClickListener(v -> startActivity(
                 new Intent(HomeActivity.this, NotificationsListActivity.class)));
-
     }
+
+
 }

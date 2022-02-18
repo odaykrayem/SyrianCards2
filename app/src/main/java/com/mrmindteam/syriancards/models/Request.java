@@ -19,6 +19,15 @@ public class Request {
         this.update_at = update_at;
     }
 
+    public Request(int id, String message, int amount, int status, int type, String create_at) {
+        this.id = id;
+        this.message = message;
+        this.amount = amount;
+        this.status = status;
+        this.type = type;
+        this.create_at = create_at;
+    }
+
     public int getId() {
         return id;
     }
